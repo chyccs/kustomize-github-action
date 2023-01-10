@@ -6,14 +6,14 @@ branding:
   icon: 'anchor'
   color: 'blue'
 inputs:
-  kustomize_command:
-    description: 'Kustomize command'
-    required: true
-    default: 'kustomize'
   kustomize_version:
     description: 'Kustomize version'
     required: true
     default: '3.0.0'
+  kustomize_command:
+    description: 'Kustomize command'
+    required: false
+    default: 'kustomize'
   kustomize_install:
     description: "whether to install kustomize or use already installed"
     required: false
