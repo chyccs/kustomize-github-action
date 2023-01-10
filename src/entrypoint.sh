@@ -9,6 +9,8 @@ function parse_inputs {
         exit 1
     fi
 
+    kustomize_command=${INPUT_KUSTOMIZE_COMMAND}
+    
     # optional inputs
     kustomize_build_dir="."
     if [ "${INPUT_KUSTOMIZE_BUILD_DIR}" != "" ] || [ "${INPUT_KUSTOMIZE_BUILD_DIR}" != "." ]; then
