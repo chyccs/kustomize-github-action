@@ -6,6 +6,10 @@ branding:
   icon: 'anchor'
   color: 'blue'
 inputs:
+  kustomize_command:
+    description: 'Kustomize command'
+    required: true
+    default: 'kustomize'
   kustomize_version:
     description: 'Kustomize version'
     required: true
